@@ -1,0 +1,53 @@
+files:
+- name: Prokaryote
+  properties:
+    analysis.class: biouml.plugins.wdl.RunWDLAnalysis$Parameters
+    analysis.inputStyle: params
+    analysis.outFolder: data/Collaboration/Sequencer examples/Epigenetics Analysis/Results/Prokaryote
+    analysisName: Run WDL
+    analysis.includes: '["biouml.plugins.wdl.RunWDLAnalysis$IncludePath@33987013"]'
+    analysisParametersDescription: '<div><b>Parameters:</b><br><ul type="circle"><li><b>wdlScriptPath</b>:
+      <a href="de:data%2FCollaboration%2FSequencer+examples%2FEpigenetics+Analysis%2FEpigenetics_analysis_microbial_workflow.wdl"
+      title="data/Collaboration/Sequencer examples/Epigenetics Analysis/Epigenetics_analysis_microbial_workflow.wdl">Epigenetics_analysis_microbial_workflow.wdl</a></li><li><b>Includes</b><ul><li><b>[0]</b><ul><li><b>path</b>:
+      <a href="de:data%2FCollaboration%2FSequencer+examples%2FEpigenetics+Analysis"
+      title="data/Collaboration/Sequencer examples/Epigenetics Analysis">Epigenetics
+      Analysis</a></li><li><b>recursive</b>: true</li></ul></li></ul></li><li><b>inputStyle</b>
+      (expert): params</li><li><b>bioumlParams</b><ul><li><b>epigenetics_analysis_microbial.bam</b>:
+      <a href="de:data%2FCollaboration%2FSequencer+examples%2FDe+Novo+Genome+Assembly%2FInput%2FH_pylori_j99.bam"
+      title="data/Collaboration/Sequencer examples/De Novo Genome Assembly/Input/H_pylori_j99.bam">H_pylori_j99.bam</a></li><li><b>epigenetics_analysis_microbial.ref_fasta</b>:
+      <a href="de:data%2FCollaboration%2FSequencer+examples%2FEpigenetics+Analysis%2FInput%2FH_pylori_j99_ASM878v1.fasta"
+      title="data/Collaboration/Sequencer examples/Epigenetics Analysis/Input/H_pylori_j99_ASM878v1.fasta">H_pylori_j99_ASM878v1.fasta</a></li></ul></li><li><b>Workflow
+      options</b> (expert): (none)</li><li><b>outFolder</b>: <a href="de:data%2FCollaboration%2FSequencer+examples%2FEpigenetics+Analysis%2FResults%2FProkaryote"
+      title="data/Collaboration/Sequencer examples/Epigenetics Analysis/Results/Prokaryote">Prokaryote</a></li></ul></div>'
+    analysis.bioumlParams: '[{"name":"epigenetics_analysis_microbial.bam","type":"ru.biosoft.access.core.DataElementPath","value":"data/Collaboration/Sequencer
+      examples/De Novo Genome Assembly/Input/H_pylori_j99.bam","bound":false,"constrained":false,"displayName":"epigenetics_analysis_microbial.bam","expert":false,"hidden":false,"preffered":false,"propertyEditorClass":null,"shortDescription":"epigenetics_analysis_microbial.bam","attributes":{"isInput":"true","can-be-null":"false"}},{"name":"epigenetics_analysis_microbial.ref_fasta","type":"ru.biosoft.access.core.DataElementPath","value":"data/Collaboration/Sequencer
+      examples/Epigenetics Analysis/Input/H_pylori_j99_ASM878v1.fasta","bound":false,"constrained":false,"displayName":"epigenetics_analysis_microbial.ref_fasta","expert":false,"hidden":false,"preffered":false,"propertyEditorClass":null,"shortDescription":"epigenetics_analysis_microbial.ref_fasta","attributes":{"isInput":"true","can-be-null":"false"}}]'
+    analysis.wdlScriptPath: data/Collaboration/Sequencer examples/Epigenetics Analysis/Epigenetics_analysis_microbial_workflow.wdl
+- name: out.vcf
+  transformer: ru.biosoft.table.access.TableDataFileTransformer2
+- name: out.combined.denovo.bed
+  transformer: ru.biosoft.bsa.transformer.BedFileTransformer
+- name: Eukaryote
+  properties:
+    analysis.class: biouml.plugins.wdl.RunWDLAnalysis$Parameters
+    analysis.inputStyle: params
+    analysis.outFolder: data/Collaboration/Sequencer examples/Epigenetics Analysis/Results/Eukaryote
+    analysisName: Run WDL
+    analysis.includes: '["biouml.plugins.wdl.RunWDLAnalysis$IncludePath@30dc149b"]'
+    analysisParametersDescription: '<div><b>Parameters:</b><br><ul type="circle"><li><b>wdlScriptPath</b>:
+      <a href="de:data%2FCollaboration%2FSequencer+examples%2FEpigenetics+Analysis%2FEpigenetics_analysis_workflow.wdl"
+      title="data/Collaboration/Sequencer examples/Epigenetics Analysis/Epigenetics_analysis_workflow.wdl">Epigenetics_analysis_workflow.wdl</a></li><li><b>Includes</b><ul><li><b>[0]</b><ul><li><b>path</b>:
+      <a href="de:data%2FCollaboration%2FSequencer+examples%2FEpigenetics+Analysis"
+      title="data/Collaboration/Sequencer examples/Epigenetics Analysis">Epigenetics
+      Analysis</a></li><li><b>recursive</b>: true</li></ul></li></ul></li><li><b>inputStyle</b>
+      (expert): params</li><li><b>bioumlParams</b><ul><li><b>epigenetics_analysis.ref_fasta</b>:
+      <a href="de:data%2FCollaboration%2FSequencer+examples%2FEpigenetics+Analysis%2FInput%2Fchr20_demo.fa"
+      title="data/Collaboration/Sequencer examples/Epigenetics Analysis/Input/chr20_demo.fa">chr20_demo.fa</a></li><li><b>epigenetics_analysis.bam</b>:
+      <a href="de:data%2FCollaboration%2FSequencer+examples%2FEpigenetics+Analysis%2FInput%2Fhg002.chr20_demo.hifi.bam"
+      title="data/Collaboration/Sequencer examples/Epigenetics Analysis/Input/hg002.chr20_demo.hifi.bam">hg002.chr20_demo.hifi.bam</a></li></ul></li><li><b>Workflow
+      options</b> (expert): (none)</li><li><b>outFolder</b>: <a href="de:data%2FCollaboration%2FSequencer+examples%2FEpigenetics+Analysis%2FResults%2FEukaryote"
+      title="data/Collaboration/Sequencer examples/Epigenetics Analysis/Results/Eukaryote">Eukaryote</a></li></ul></div>'
+    analysis.bioumlParams: '[{"name":"epigenetics_analysis.ref_fasta","type":"ru.biosoft.access.core.DataElementPath","value":"data/Collaboration/Sequencer
+      examples/Epigenetics Analysis/Input/chr20_demo.fa","bound":false,"constrained":false,"displayName":"epigenetics_analysis.ref_fasta","expert":false,"hidden":false,"preffered":false,"propertyEditorClass":null,"shortDescription":"epigenetics_analysis.ref_fasta","attributes":{"isInput":"true","can-be-null":"false"}},{"name":"epigenetics_analysis.bam","type":"ru.biosoft.access.core.DataElementPath","value":"data/Collaboration/Sequencer
+      examples/Epigenetics Analysis/Input/hg002.chr20_demo.hifi.bam","bound":false,"constrained":false,"displayName":"epigenetics_analysis.bam","expert":false,"hidden":false,"preffered":false,"propertyEditorClass":null,"shortDescription":"epigenetics_analysis.bam","attributes":{"isInput":"true","can-be-null":"false"}}]'
+    analysis.wdlScriptPath: data/Collaboration/Sequencer examples/Epigenetics Analysis/Epigenetics_analysis_workflow.wdl

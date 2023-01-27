@@ -1,0 +1,4 @@
+{
+	"epigenetics_analysis.ref_fasta":"chr20_demo.fa",
+	"epigenetics_analysis.bam":"hg002.chr20_demo.hifi.bam"
+}

@@ -1,0 +1,5 @@
+files:
+- name: epigenetic_seq_eukaryotes.md
+  transformer: ru.biosoft.access.support.FileTextTransformer
+- name: epigenetic_seq_prokaryote.md
+  transformer: ru.biosoft.access.support.FileTextTransformer

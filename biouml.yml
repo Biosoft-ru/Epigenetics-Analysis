@@ -1,0 +1,27 @@
+files:
+- name: inputs.json
+  transformer: ru.biosoft.access.support.FileTextTransformer
+- name: options.json
+  transformer: ru.biosoft.access.support.FileTextTransformer
+- name: Epigenetics_analysis_microbial_workflow.wdl
+  transformer: biouml.plugins.wdl.WDLScriptTransformer
+- name: Results
+  properties:
+    analysisParametersDescription: '<div><b>Parameters:</b><br><ul type="circle"><li><b>wdlScriptPath</b>:
+      <a href="de:data%2FCollaboration%2FSequencer+examples%2FRNA+Sequencing%2FRNA_sequencing_workflow.wdl"
+      title="data/Collaboration/Sequencer examples/RNA Sequencing/RNA_sequencing_workflow.wdl">RNA_sequencing_workflow.wdl</a></li><li><b>Includes</b><ul><li><b>[0]</b><ul><li><b>path</b>:
+      <a href="de:data%2FCollaboration%2FSequencer+examples%2FEpigenetics+Analysis%2Fwdls"
+      title="data/Collaboration/Sequencer examples/Epigenetics Analysis/wdls">wdls</a></li><li><b>recursive</b>:
+      true</li></ul></li></ul></li><li><b>inputStyle</b> (expert): params</li><li><b>bioumlParams</b><ul><li><b>rna_sequencing.reads_ccs_bam</b>:
+      (none)</li><li><b>rna_sequencing.reference_fasta</b>: (none)</li><li><b>rna_sequencing.annotation</b>:
+      (none)</li><li><b>rna_sequencing.reference_index</b>: (none)</li><li><b>rna_sequencing.primer_fasta</b>:
+      (none)</li></ul></li><li><b>Workflow options</b> (expert): (none)</li><li><b>outFolder</b>:
+      <a href="de:data%2FCollaboration%2FSequencer+examples%2FEpigenetics+Analysis%2FResults"
+      title="data/Collaboration/Sequencer examples/Epigenetics Analysis/Results">Results</a></li></ul></div>'
+    analysis.class: biouml.plugins.wdl.RunWDLAnalysis$Parameters
+    analysis.inputStyle: params
+    analysis.bioumlParams: '[{"name":"rna_sequencing.reads_ccs_bam","type":"ru.biosoft.access.core.DataElementPath","value":"","bound":false,"constrained":false,"displayName":"rna_sequencing.reads_ccs_bam","expert":false,"hidden":false,"preffered":false,"propertyEditorClass":null,"shortDescription":"rna_sequencing.reads_ccs_bam","attributes":{"isInput":"true","can-be-null":"false"}},{"name":"rna_sequencing.reference_fasta","type":"ru.biosoft.access.core.DataElementPath","value":"","bound":false,"constrained":false,"displayName":"rna_sequencing.reference_fasta","expert":false,"hidden":false,"preffered":false,"propertyEditorClass":null,"shortDescription":"rna_sequencing.reference_fasta","attributes":{"isInput":"true","can-be-null":"false"}},{"name":"rna_sequencing.annotation","type":"ru.biosoft.access.core.DataElementPath","value":"","bound":false,"constrained":false,"displayName":"rna_sequencing.annotation","expert":false,"hidden":false,"preffered":false,"propertyEditorClass":null,"shortDescription":"rna_sequencing.annotation","attributes":{"isInput":"true","can-be-null":"false"}},{"name":"rna_sequencing.reference_index","type":"ru.biosoft.access.core.DataElementPath","value":"","bound":false,"constrained":false,"displayName":"rna_sequencing.reference_index","expert":false,"hidden":false,"preffered":false,"propertyEditorClass":null,"shortDescription":"rna_sequencing.reference_index","attributes":{"isInput":"true","can-be-null":"false"}},{"name":"rna_sequencing.primer_fasta","type":"ru.biosoft.access.core.DataElementPath","value":"","bound":false,"constrained":false,"displayName":"rna_sequencing.primer_fasta","expert":false,"hidden":false,"preffered":false,"propertyEditorClass":null,"shortDescription":"rna_sequencing.primer_fasta","attributes":{"isInput":"true","can-be-null":"false"}}]'
+    analysis.wdlScriptPath: data/Collaboration/Sequencer examples/RNA Sequencing/RNA_sequencing_workflow.wdl
+    analysis.outFolder: data/Collaboration/Sequencer examples/Epigenetics Analysis/Results
+    analysisName: Run WDL
+    analysis.includes: '["biouml.plugins.wdl.RunWDLAnalysis$IncludePath@27ca9e47"]'
